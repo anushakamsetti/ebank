@@ -50,7 +50,7 @@ class Login extends Component {
   onSubmitForm = async event => {
     event.preventDefault()
     const {userId, userPin} = this.state
-    const userDetails = {userId, userPin}
+    const userDetails = {user_id: userId, pin: userPin}
     const loginUrl = 'https://apis.ccbp.in/ebank/login'
     const options = {
       mode: 'cors',
